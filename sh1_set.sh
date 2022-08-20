@@ -1,15 +1,16 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    sh1_set.sh                                         :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: chenxu <chenxu@mail.ustc.edu.cn>           +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/08/20 22:46:07 by chenxu            #+#    #+#              #
-#    Updated: 2022/08/20 22:46:24 by chenxu           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+#!/bin/bash
+# copyright https://mit-license.org
+# File              : sh1_set.sh
+# Author            : chenxu <chenxu@mail.ustc.edu.cn>
+# Date              : 6 2022-08-20 22:50:15
+# Last Modified Date: 6 2022-08-20 22:50:15
+# Last Modified By  : chenxu <chenxu@mail.ustc.edu.cn>
 
 
 apt install -y git
-git clone 
+git clone https://github.com/cxwx/blocks
+echo change password and create new user now!!!!
+cp sshd_config /etc/ssh/sshd_config
+chmod 644 /etc/ssh/sshd_config
+cp hosts.deny /etc/hosts.deny
+chmod 644 /etc/hosts.deny
