@@ -16,5 +16,5 @@ mv allblock hosts.deny
 rm newblock
 cp hosts.deny /etc/hosts.deny
 msg=`date --iso-8601=seconds`
-git commit -m "${msg}"
+git commit -a -m "${msg}"
 git push
