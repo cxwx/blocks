@@ -13,6 +13,7 @@
 lastb |awk '{print $3}' |grep "\." |sort |uniq |awk '{printf ("ALL: %s\n", $1)}'>newblock
 cat newblock hosts.deny |uniq >allblock
 mv allblock hosts.deny
+rm newblock
 cp hosts.deny /etc/hosts.deny
 msg=`date --iso-8601=seconds`
 git commit -m "${msg}"
