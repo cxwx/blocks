@@ -19,5 +19,5 @@ crontab -e
 ```
 add this line
 ```
-*/2 * * * /data02/chenxu/cdn/sh1_get.sh
+*/2 * * * ~/blocks/sh2_generate.sh
 ```
