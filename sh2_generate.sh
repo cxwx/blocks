@@ -10,6 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
+git pull
 lastb |awk '{print $3}' |grep "\." |sort |uniq |awk '{printf ("ALL: %s\n", $1)}'>newblock
 cat newblock hosts.deny |uniq >allblock
 mv allblock hosts.deny
